@@ -1,0 +1,36 @@
+<!-- <!DOCTYPE html> -->
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>点赞插件</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="system.js"></script>
+    <script type="text/javascript" src="index.js"></script>
+</head>
+
+<body>
+    <div class="box">
+        <div class="mask" id="oDiv">
+            <div class="arm">
+            </div>
+            <div class="finger big-finger"></div>
+            <div class="hand">
+                <div class="finger"></div>
+                <div class="finger"></div>
+                <div class="finger"></div>
+                <div class="finger"></div>
+            </div>
+            <span class="show-num">+ 1</span>
+        </div>
+    </div>
+    <script type="text/javascript">
+    SystemJS.config({
+     	baseURL:'./js'
+     });
+     SystemJS.import('Component.js');
+     SystemJS.import('Support.js');
+     SystemJS.import('index.js');
+    </script>
+</body>
+
+</html>
